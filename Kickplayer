@@ -1,0 +1,18 @@
+local blocked = {
+    ["UserA"] = true,
+    ["UserB"] = true,
+    ["UserC"] = true,
+    ["UserD"] = true,
+    ["UserE"] = true,
+    ["UserF"] = true,
+    ["UserG"] = true,
+    ["UserH"] = true,
+    ["UserI"] = true,
+    ["UserJ"] = true
+}
+
+local player = game.Players.LocalPlayer
+
+if blocked[player.Name] then
+    player:Kick("bạn đã bị ban script.")
+end
